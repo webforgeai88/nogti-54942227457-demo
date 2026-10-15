@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Хочу Еще! · Салон красоты</title>
-<meta name="description" content="Прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.">
+<meta name="description" content="Откройте раздел – внутри полный прайс с карточки на Яндекс Картах. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Маникюр и педикюр в Челябинске – цена до записи">
-<meta property="og:description" content="Прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.">
+<meta property="og:description" content="Откройте раздел – внутри полный прайс с карточки на Яндекс Картах. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%23c8553d%27/%3E%3C/svg%3E">
@@ -25,6 +25,7 @@
 :root { --c-canvas: #f6f2ec; --c-surface: #ffffff; --c-ink: #1f1c1a; --c-ink-soft: #615a53; --c-accent: #c8553d; --c-accent-ink: #fff8f3; --c-accent-deep: #a8432d; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<link rel="stylesheet" href="tiles.css">
 </head>
 <body class="s-prod" id="top" data-wa="79090850858" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -39,7 +40,7 @@
     <div class="s-hero__text">
       <p class="s-eyebrow">Маникюр и педикюр · Челябинск</p>
       <h1>Маникюр и педикюр в Челябинске – цена до записи</h1>
-      <p class="s-lead">Прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.</p>
+      <p class="s-lead">Откройте раздел – внутри полный прайс с карточки на Яндекс Картах. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ежедневно 9:00–21:00, Лесопарковая, 7А.</p>
       <ul class="s-ticks"><li>Цена названа до записи</li><li>Ежедневно 9:00–21:00</li><li>4,9 на Яндекс.Картах</li></ul>
       <p class="s-rating"><b>4,9</b> на Яндекс.Картах · 46 отзывов</p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Зона маникюра и педикюра: синие кресла и яркие картины на белой стене" loading="lazy" decoding="async"></figure>
@@ -71,11 +72,15 @@
   </section>
 
   <section class="s-section s-reveal" id="prices">
-    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Все услуги маникюра и педикюра с карточки на Яндекс Картах. Где цена зависит от покрытия, в строке указаны варианты.</p></header>
-    <div class="s-board"><div class="s-board__group">
-      <h3 class="s-board__title">Маникюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Маникюр<em>лечебным лаком 1 400 ₽, цветным лаком 1 700 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 400 ₽</span></li>
+    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Откройте раздел «Маникюр» или «Педикюр» – внутри полный прайс с карточки на Яндекс Картах. Где цена зависит от покрытия, в строке указаны варианты.</p></header>
+    <div class="s-tiles" style="--cols:2">
+      <button class="s-tile" type="button" style="--i:1" id="tile1-btn" aria-expanded="false" aria-controls="tile1">
+        <img class="s-tile__img" src="assets/tile-manikyur.webp" alt="Стеллаж с гель-лаками для маникюра" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Маникюр</span><span class="s-tile__meta">10 услуг · от 1 400 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile1" role="region" aria-labelledby="tile1-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Маникюр<em>лечебным лаком 1 400 ₽, цветным лаком 1 700 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 400 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Маникюр + гель-лак в 1 тон<em>со снятием старого гель-лака, выравниванием ногтевой пластины</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 400 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Маникюр + гель-лак Luxio в 1 тон<em>гель-лак канадского бренда Luxio</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Японский маникюр P.Shine<em>питательный уход: витамины А и Е, кератин, пчелиная пыльца</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 900 ₽</span></li>
@@ -85,20 +90,24 @@
         <li class="s-board__row"><span class="s-board__name">Ламинирование ногтей<em>для слабых и слоящихся ногтей</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Наращивание ногтей<em>с покрытием гель-лаком в 1 тон</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">4 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Дизайн: френч, лунный<em>отдельно к покрытию</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">600 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Педикюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Экспресс-педикюр<em>лечебным лаком 1 900 ₽, лаком 2 300 ₽, гель-лаком 2 700 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 900 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:2" id="tile2-btn" aria-expanded="false" aria-controls="tile2">
+        <img class="s-tile__img" src="assets/tile-pedikyur.webp" alt="Жёлтое кресло для педикюра" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Педикюр</span><span class="s-tile__meta">7 услуг · от 1 900 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile2" role="region" aria-labelledby="tile2-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Экспресс-педикюр<em>лечебным лаком 1 900 ₽, лаком 2 300 ₽, гель-лаком 2 700 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр<em>лечебным лаком 2 400 ₽, лаком 3 100 ₽, гель-лаком 3 600 ₽, Luxio 3 900 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 400 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр Smart 2.0<em>лечебным лаком 2 700 ₽, лаком 3 100 ₽, гель-лаком 3 600 ₽, Luxio 3 900 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 700 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">SMARTICURE педикюр<em>лечебным лаком 2 700 ₽, лаком 3 100 ₽, гель-лаком 3 600 ₽, Luxio 3 900 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 700 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Японский педикюр<em>Smart-педикюр и эко-глянцевание ногтей</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Фруктовый педикюр Kart (Израиль)<em>лечебным лаком 3 400 ₽, цветным 3 800 ₽, гель-лаком 4 300 ₽, Luxio 4 600 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 400 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Покрытие плёнки на ноги<em>2 больших пальца 600 ₽, все пальцы 1 500 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 600 ₽</span></li>
-      </ul>
-    </div></div>
+        </ul>
+      </div>
+    </div>
     <p class="s-note">Цены взяты с карточки «Хочу Еще!» на Яндекс Картах на 14 октября 2026, на карточке цены помечены как давно не обновлявшиеся: актуальную цену уточняйте при записи. Время процедур на карточке не указано.</p>
   </section>
 
@@ -158,5 +167,6 @@
 <footer class="s-foot"><p>Хочу Еще! · Челябинск</p><p>Маникюр и педикюр. В салоне также: стрижки, окрашивание, брови и ресницы, депиляция, уход за лицом</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться онлайн</a><a class="s-btn s-btn--ghost" href="tel:+79090850858">Позвонить</a></nav>
 <script src="style.js" defer></script>
+<script src="tiles.js" defer></script>
 </body>
 </html>
